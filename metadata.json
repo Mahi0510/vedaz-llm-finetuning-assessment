@@ -1,0 +1,6 @@
+{
+  "name": "Vedaz AI Astrologer Fine-Tuning Hub",
+  "description": "Interactive dashboard to explore our responsible Qwen2.5-7B Vedic Astrologer fine-tuning pipeline, inspect source code, read engineering reports, and test the safety-aligned chat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

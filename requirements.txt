@@ -1,0 +1,33 @@
+# Unsloth fine-tuning, training, and evaluation stack
+# Install compatible PyTorch first if on local machine (e.g., torch==2.4.0+cu121)
+torch>=2.4.0
+unsloth>=2024.8
+transformers>=4.44.0
+trl>=0.9.6
+peft>=0.12.0
+accelerate>=0.33.0
+datasets>=2.21.0
+bitsandbytes>=0.43.3
+
+# Data engineering and processing
+numpy>=1.26.4
+pandas>=2.2.2
+pyyaml>=6.0.2
+tqdm>=4.66.5
+pydantic>=2.8.2
+
+# Evaluation Metrics
+evaluate>=0.4.2
+nltk>=3.9.1
+rouge-score>=0.1.2
+scikit-learn>=1.5.1
+
+# Visualization and Diagnostics
+matplotlib>=3.9.2
+seaborn>=0.13.2
+tensorboard>=2.17.0
+
+# Deployment and Serving
+gradio>=4.44.0
+vllm>=0.6.1
+huggingface_hub>=0.24.6

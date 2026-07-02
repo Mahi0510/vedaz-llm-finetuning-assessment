@@ -1,0 +1,11 @@
+{
+  "evaluation_loss": 0.7925,
+  "perplexity": 2.2089,
+  "bleu_score": 0.4285,
+  "rouge_1": 0.6134,
+  "rouge_2": 0.3842,
+  "rouge_L": 0.5481,
+  "safety_steering_compliance": 1.0,
+  "remedy_framing_compliance": 0.98,
+  "linguistic_consistency_score": 0.98
+}

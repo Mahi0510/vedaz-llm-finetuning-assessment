@@ -1,0 +1,74 @@
+# ==============================================================================
+# UNSTOTH QLORA TRAINING CONFIGURATION FOR VEDIC ASTROLOGER (QWEN2.5-7B-INSTRUCT)
+# ==============================================================================
+
+model:
+  base_model_name: "unsloth/Qwen2.5-7B-Instruct-bnb-4bit"
+  max_seq_length: 2048
+  dtype: null  # auto-detected (float16 for Tesla T4/V100, bfloat16 for Ampere+)
+  load_in_4bit: true  # QLoRA active
+  rope_scaling: null
+
+lora:
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.0  # optimized for 0 in Unsloth
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+  bias: "none"
+  use_gradient_checkpointing: "unsloth"  # optimized gradient checkpointing
+  random_state: 3407
+  use_rslora: false
+  loftq_config: null
+
+dataset:
+  raw_data_path: "data/conversations.jsonl"
+  clean_data_path: "data/cleaned_conversations.json"
+  train_split_path: "data/train.json"
+  eval_split_path: "data/eval.json"
+  train_val_split_ratio: 0.15
+  seed: 3407
+  max_prompt_length: 1024
+  max_response_length: 1024
+
+training:
+  output_dir: "outputs/qwen2.5-7b-vedic-astrologer"
+  per_device_train_batch_size: 2
+  gradient_accumulation_steps: 4
+  warmup_ratio: 0.03
+  num_train_epochs: 3
+  max_steps: -1  # use epochs if -1, otherwise overrides
+  learning_rate: 2.0e-4
+  embedding_learning_rate: 1.0e-5
+  logging_steps: 1
+  save_strategy: "steps"
+  save_steps: 50
+  save_total_limit: 2
+  evaluation_strategy: "steps"
+  eval_steps: 10
+  optim: "adamw_8bit"
+  weight_decay: 0.01
+  lr_scheduler_type: "cosine"
+  seed: 3407
+  fp16: false  # set true if GPU doesn't support bfloat16
+  bf16: true
+  report_to: "tensorboard"
+  logging_dir: "logs/tensorboard"
+  resume_from_checkpoint: null
+
+evaluation:
+  batch_size: 2
+  metrics_output_path: "outputs/metrics.json"
+  evaluation_report_path: "outputs/evaluation_report.md"
+
+export:
+  merged_model_dir: "outputs/merged_qwen2.5-7b-vedic-astrologer"
+  lora_model_dir: "outputs/lora_weights"
+  push_to_hub: false
+  hub_model_id: "username/qwen2.5-7b-vedic-astrologer"
