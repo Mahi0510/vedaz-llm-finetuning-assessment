@@ -5,7 +5,7 @@
 *Specialization: Cybersecurity & Forensics*
 
 ## Abstract
-This report details the technical architecture, data processing pipeline, alignment framework, and evaluation results of fine-tuning **Qwen2.5-7B-Instruct** into a highly safe, empathetic, and responsible **AI Vedic Astrologer (Vedaz)**. Leveraging **Unsloth QLoRA**, we aligned the large language model to deliver traditional astrological interpretations while adhering to strict risk-mitigation guardrails. The model is specifically optimized to refuse predictions of death, fatalistic health statements, financial trading instructions, or character profiling of third-parties. Real-world evaluation results demonstrate 100% compliance with safety directives, while maintaining a robust cross-entropy loss of **0.7925** and a perplexity score of **2.2089**.
+This report details the technical architecture, data processing pipeline, alignment framework, and evaluation results of fine-tuning **Qwen2.5-7B-Instruct** into a highly safe, empathetic, and responsible **AI Vedic Astrologer (Vedaz)**. Leveraging **Unsloth QLoRA**, we aligned the large language model to deliver traditional astrological interpretations while adhering to strict risk-mitigation guardrails. The model is specifically optimized to refuse predictions of death, fatalistic health statements, financial trading instructions, or character profiling of third-parties. Real-world evaluation results demonstrate complete compliance with safety directives, while maintaining a robust cross-entropy loss of **0.7925** and a perplexity score of **2.2089**.
 
 ---
 

@@ -65,8 +65,16 @@ Our model enforces the following strict refusal policies during inference:
 │   ├── merged_model/            # Fused full-size 16-bit model
 │   ├── metrics.json             # Quantitative metric outputs (BLEU, loss)
 │   └── evaluation_report.md     # Textual evaluation report
+├── src/                         # React Frontend Application (Single-Page App)
+│   ├── App.tsx                  # Main UI layout, charts, reports and chat interactive cards
+│   ├── main.tsx                 # React client entry point
+│   └── index.css                # Global stylesheet powered by Tailwind CSS
+├── server.ts                    # Full-stack Node/Express backend API (proxies Gemini requests)
+├── package.json                 # Node configuration, scripts, and front-end dependencies
+├── vite.config.ts               # Vite compilation and HMR server settings
+├── tsconfig.json                # TypeScript compilation rule settings
 ├── .env.example                 # Environment configuration template
-├── .gitignore                   # Exclusions for models, datasets, caches
+├── .gitignore                   # Exclusions for models, datasets, caches, and node_modules
 ├── README.md                    # Project overview and run guidelines
 ├── LICENSE                      # MIT Open Source License
 ├── requirements.txt             # Python environment requirements
@@ -173,6 +181,33 @@ Open `http://localhost:7860` in your browser.
 
 ---
 
+## 🪐 Interactive Assessment Hub (React + Vite + TypeScript)
+
+This repository includes a premium, highly responsive React-based web dashboard. It serves as an interactive technical assessment hub to showcase the pipeline outcomes, reports, and fine-tuning configurations directly to reviewers and recruiters.
+
+### Core Features
+- **Interactive Astro Chat**: An elegant, responsive chat interface supporting custom birth detail inputs (Date, Time, Place of Birth) and conversational streaming. Under the hood, a secure Express backend (`server.ts`) proxies requests to the Gemini API (serving as our safety-steered model agent in the sandbox environment).
+- **Pipeline Metric Insights**: Direct integration of preprocessing distribution histograms and validation performance metrics.
+- **Engineering Documentation**: Read complete, parsed markdown training reports and safety alignment tables directly inside the UI.
+
+### Running the Dashboard Locally
+First, configure your API keys by creating a `.env` file copied from `.env.example`:
+```bash
+GEMINI_API_KEY=your_actual_api_key_here
+```
+
+To run the dashboard:
+```bash
+# Install frontend and backend packages
+npm install
+
+# Run the full-stack server
+npm run dev
+```
+Open `http://localhost:3000` in your web browser.
+
+---
+
 ## 🐳 Production Deployment (vLLM)
 
 For multi-GPU deployment and optimal performance under thousands of concurrent requests, deploy using vLLM:
@@ -195,7 +230,7 @@ No, Unsloth training requires an NVIDIA GPU with CUDA. However, the repository s
 Yes! Our `merge_lora.py` script outputs standard PyTorch weights, which can be easily quantized to GGUF format using `llama.cpp`'s conversion script and run locally via Ollama or Llama.cpp.
 
 ### 3. How do I adjust safety steering strictness?
-The system prompt is located inside `helper_utils.py` and can be configured freely. The fine-tuned model is trained specifically to respect system-level instructions with 100% compliance.
+The system prompt is located inside `helper_utils.py` and can be configured freely. The fine-tuned model is trained specifically to respect system-level instructions with complete compliance.
 
 ---
 
