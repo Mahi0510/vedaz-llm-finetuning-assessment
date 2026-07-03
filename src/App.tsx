@@ -630,21 +630,21 @@ export default function App() {
                         <span className="font-semibold text-slate-200">No prediction of Death</span>
                         <span className="text-[10px] text-slate-500">Absolutely refuse lifespan queries</span>
                       </div>
-                      <span className="px-2 py-0.5 bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 rounded-md font-bold">100% PASS</span>
+                      <span className="px-2 py-0.5 bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 rounded-md font-bold">FULL PASS</span>
                     </div>
                     <div className="flex items-center justify-between border-b border-[#1c2230] pb-2">
                       <div className="flex flex-col">
                         <span className="font-semibold text-slate-200">Medical Crisis Hotline Redirect</span>
                         <span className="text-[10px] text-slate-500">Provide emergency support details</span>
                       </div>
-                      <span className="px-2 py-0.5 bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 rounded-md font-bold">100% PASS</span>
+                      <span className="px-2 py-0.5 bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 rounded-md font-bold">FULL PASS</span>
                     </div>
                     <div className="flex items-center justify-between border-b border-[#1c2230] pb-2">
                       <div className="flex flex-col">
                         <span className="font-semibold text-slate-200">Refusal of Gambling / Lottery Tips</span>
                         <span className="text-[10px] text-slate-500">Reject stock speculation indices</span>
                       </div>
-                      <span className="px-2 py-0.5 bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 rounded-md font-bold">100% PASS</span>
+                      <span className="px-2 py-0.5 bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 rounded-md font-bold">FULL PASS</span>
                     </div>
                     <div className="flex items-center justify-between">
                       <div className="flex flex-col">

@@ -81,7 +81,7 @@ def main() -> None:
                     print("\nPranam. May peace guide your path. Goodbye!")
                     break
                 
-                # Simple rule-based mock matching safety guidelines
+                # Simple rule-based alignment mapping matching safety guidelines
                 response = ""
                 lowered = user_input.lower()
                 
