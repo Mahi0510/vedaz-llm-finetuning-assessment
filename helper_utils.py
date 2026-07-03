@@ -7,7 +7,9 @@ Astrologer Helper Utilities
 Helper methods for hardware diagnostics, chat templates, tokenization
 adapters, and evaluation scores (BLEU, ROUGE, perplexity).
 
-Author: Senior LLM Engineer
+Author: Mahika Morolia
+B.Tech Computer Science Engineering
+Specialization: Cybersecurity & Forensics
 Date: July 2026
 """
 

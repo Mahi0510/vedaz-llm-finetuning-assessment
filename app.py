@@ -7,7 +7,9 @@ Gradio Web Application for Vedaz Vedic Astrologer
 Launches an elegant web application with full conversation history,
 birth detail integrations, and streaming responses. Supports CUDA/CPU fallbacks.
 
-Author: Senior ML Engineer
+Author: Mahika Morolia
+B.Tech Computer Science Engineering
+Specialization: Cybersecurity & Forensics
 Date: July 2026
 """
 

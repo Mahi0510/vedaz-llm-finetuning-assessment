@@ -1,6 +1,8 @@
 # Data Preprocessing Pipeline Report
 Generated on: 2026-07-02
-Author: Senior LLM Engineer
+Author: Mahika Morolia
+B.Tech Computer Science Engineering
+Specialization: Cybersecurity & Forensics
 
 ## Dataset Cleaning Summary
 The raw ingestion file `data/conversations.jsonl` was scrutinized for structural integrity, correct formatting, duplication patterns, and language appropriateness.

@@ -7,7 +7,9 @@ Inference CLI client for Vedic Astrologer model
 Loads the fine-tuned model weights and provides a console prompt loop
 with token streaming, tracking conversation history natively.
 
-Author: Senior ML Engineer
+Author: Mahika Morolia
+B.Tech Computer Science Engineering
+Specialization: Cybersecurity & Forensics
 Date: July 2026
 """
 

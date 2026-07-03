@@ -8,7 +8,9 @@ This script takes the raw conversational datasets, validates JSON-L format,
 detects and eliminates duplicate entries, sanitizes the fields, performs
 deterministic train-validation splits, and generates a statistics plot.
 
-Author: Senior LLM Engineer & Open Source Maintainer
+Author: Mahika Morolia
+B.Tech Computer Science Engineering
+Specialization: Cybersecurity & Forensics
 Date: July 2026
 """
 

@@ -7,7 +7,9 @@ Fine-tune Qwen2.5-7B-Instruct using Unsloth LoRA/QLoRA
 Optimized training pipeline script for configuring, initializing, and
 running responsible AI Vedic Astrologer model SFT alignment.
 
-Author: Senior ML Engineer
+Author: Mahika Morolia
+B.Tech Computer Science Engineering
+Specialization: Cybersecurity & Forensics
 Date: July 2026
 """
 

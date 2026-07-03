@@ -7,7 +7,9 @@ Evaluate Fine-tuned Vedic Astrologer model
 Runs evaluation on test split to compute Perplexity, BLEU, and ROUGE,
 validating safety steering constraints and producing formal markdown reports.
 
-Author: Senior LLM Engineer
+Author: Mahika Morolia
+B.Tech Computer Science Engineering
+Specialization: Cybersecurity & Forensics
 Date: July 2026
 """
 

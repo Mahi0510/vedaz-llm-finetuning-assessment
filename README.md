@@ -1,13 +1,17 @@
 # 🌌 Vedaz AI: Fine-Tuned Responsible Vedic Astrologer
 ======================================================
 
+**Author: Mahika Morolia**  
+*B.Tech Computer Science Engineering*  
+*Specialization: Cybersecurity & Forensics*
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Model: Qwen2.5-7B-Instruct](https://img.shields.io/badge/Base_Model-Qwen2.5--7B--Instruct-blueviolet.svg)](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 [![Engine: Unsloth QLoRA](https://img.shields.io/badge/Alignment_Engine-Unsloth_QLoRA-ff69b4.svg)](https://github.com/unslothlib/unsloth)
 [![Framework: Gradio](https://img.shields.io/badge/UI_Framework-Gradio-orange.svg)](https://github.com/gradio-app/gradio)
 
-An production-grade repository for fine-tuning, evaluating, merging, and deploying a highly responsible, safety-aligned **AI Vedic Astrologer (Vedaz)** based on **Qwen2.5-7B-Instruct** using **Unsloth LoRA/QLoRA**.
+An end-to-end reference implementation repository for fine-tuning, evaluating, merging, and deploying a highly responsible, safety-aligned **AI Vedic Astrologer (Vedaz)** based on **Qwen2.5-7B-Instruct** using **Unsloth LoRA/QLoRA**.
 
 ---
 

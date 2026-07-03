@@ -7,7 +7,9 @@ Merge LoRA Weights into Base Model
 Loads base model and trained LoRA weights, fuses them into a single 16-bit
 model, and exports the unified weights for high-throughput serving (e.g. vLLM).
 
-Author: Senior ML Engineer
+Author: Mahika Morolia
+B.Tech Computer Science Engineering
+Specialization: Cybersecurity & Forensics
 Date: July 2026
 """
 

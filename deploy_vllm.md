@@ -1,7 +1,11 @@
-# Production Deployment Guide: vLLM + Docker + Nginx
+# Reference Deployment Guide: vLLM + Docker + Nginx
 ===================================================
 
-This document provides complete instructions to deploy the fine-tuned **Qwen2.5-7B Vedic Astrologer** model in a secure, high-throughput, and scalable production environment.
+**Author: Mahika Morolia**  
+*B.Tech Computer Science Engineering*  
+*Specialization: Cybersecurity & Forensics*
+
+This document provides instructions to deploy the fine-tuned **Qwen2.5-7B Vedic Astrologer** model in a secure, high-throughput, and deployment-ready architecture environment.
 
 ---
 
@@ -195,4 +199,4 @@ vLLM exposes standard metrics out-of-the-box in Prometheus format on `http://loc
 - **`vllm:num_requests_running`**: Concurrent sequences being computed in parallel.
 - **`vllm:request_generation_tokens_per_second`**: Model throughput rate. Target: >40 tokens/sec.
 
-*Ready for production deployment.*
+*Ready for deployment-ready reference architectures.*

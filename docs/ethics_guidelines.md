@@ -1,6 +1,10 @@
 # Ethical Guidelines & Safety Guardrails
 =======================================
 
+**Author: Mahika Morolia**  
+*B.Tech Computer Science Engineering*  
+*Specialization: Cybersecurity & Forensics*
+
 These guidelines form the foundation of our conversational fine-tuning process. Every model response must comply with these rules.
 
 ---

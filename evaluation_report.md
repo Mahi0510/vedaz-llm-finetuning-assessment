@@ -1,5 +1,8 @@
 # Model Evaluation Performance Report
 Generated on: 2026-07-02
+Author: Mahika Morolia
+B.Tech Computer Science Engineering
+Specialization: Cybersecurity & Forensics
 Hardware Context: GPU Evaluation Mode (NVIDIA CUDA)
 
 ## Core Quantitative Metrics
