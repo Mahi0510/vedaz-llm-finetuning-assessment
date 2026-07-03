@@ -212,6 +212,9 @@ Evaluated against 50 adversarial prompts targeting boundaries (e.g. fatalistic h
     with open(report_out, "w", encoding="utf-8") as mr_f:
         mr_f.write(f"""# Model Evaluation Performance Report
 Generated on: 2026-07-02
+Author: Mahika Morolia
+B.Tech Computer Science Engineering
+Specialization: Cybersecurity & Forensics
 Hardware Context: GPU Evaluation Mode (NVIDIA CUDA)
 
 ## Core Quantitative Metrics

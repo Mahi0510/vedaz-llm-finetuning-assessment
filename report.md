@@ -1,4 +1,4 @@
-# Production Report: Fine-Tuning Qwen2.5-7B-Instruct with Unsloth LoRA/QLoRA for an Ethical Vedic Astrologer
+# Technical Assessment Report: Fine-Tuning Qwen2.5-7B-Instruct with Unsloth LoRA/QLoRA for an Ethical Vedic Astrologer
 
 **Author: Mahika Morolia**  
 *B.Tech Computer Science Engineering*  
@@ -28,7 +28,7 @@ To solve this, we formulated the **Responsible Vedic Astrologer Alignment Projec
 For our base model, we selected **Qwen-2.5-7B-Instruct**. This decision was driven by the following technical parameters:
 
 ### Multilingual Register Maintenance
-Vedic astrology queries are overwhelmingly submitted in mixed bilingual registers—primarily **Hinglish** (Hindi written in Roman script) and **pure Hindi**, alongside **English**. Qwen2.5 features state-of-the-art tokenization and training data distributions across multiple languages, specifically displaying superior performance on Indic registers compared to LLaMA-3 or Mistral-v0.3.
+Vedic astrology queries are overwhelmingly submitted in mixed bilingual registers—primarily **Hinglish** (Hindi written in Roman script) and **pure Hindi**, alongside **English**. Qwen2.5 features highly advanced tokenization and training data distributions across multiple languages, specifically displaying superior performance on Indic registers compared to LLaMA-3 or Mistral-v0.3.
 
 ### Context Compression and Instruction Following
 Fine-tuning for complex dialog requires high-fidelity instruction-following capabilities. Qwen2.5-7B possesses an expanded context window supporting up to 128K tokens (we train at 2048) and showcases strong reasoning scores. This allows it to hold a steady, empathetic tone over long multi-turn interactions.
@@ -37,7 +37,7 @@ Fine-tuning for complex dialog requires high-fidelity instruction-following capa
 
 ## 3. PEFT Optimization: Why LoRA, QLoRA, and Unsloth?
 
-Fusing large models on consumer-grade or mid-range enterprise GPUs (e.g., single NVIDIA T4 or L4 instances) requires optimizing parameter weights. Our training pipeline utilizes the **Unsloth** library to implement QLoRA.
+Fusing large models on consumer-grade or mid-range workstation GPUs (e.g., single NVIDIA T4 or L4 instances) requires optimizing parameter weights. Our training pipeline utilizes the **Unsloth** library to implement QLoRA.
 
 ```
 +-------------------------------------------------------------+

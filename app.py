@@ -229,7 +229,7 @@ def main() -> None:
         gr.Markdown(
             """
             # 🌌 Vedaz AI Vedic Astrologer
-            ### Production-Grade Responsible Astrology Fine-Tuning Sandbox
+            ### Reference Responsible Astrology Fine-Tuning Sandbox
             *Powered by Unsloth QLoRA on Qwen2.5-7B-Instruct. Fusing ancient Vedic wisdom with strict safety compliance.*
             """
         )

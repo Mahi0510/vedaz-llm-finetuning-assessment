@@ -294,7 +294,9 @@ def main() -> None:
         with open(preproc_report_path, "w", encoding="utf-8") as rep_f:
             rep_f.write(f"""# Data Preprocessing Pipeline Report
 Generated on: 2026-07-02
-Author: Senior LLM Engineer
+Author: Mahika Morolia
+B.Tech Computer Science Engineering
+Specialization: Cybersecurity & Forensics
 
 ## Dataset Cleaning Summary
 The raw ingestion file `{raw_path}` was scrutinized for structural integrity, correct formatting, duplication patterns, and language appropriateness.

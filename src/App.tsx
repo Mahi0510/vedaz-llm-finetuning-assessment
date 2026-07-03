@@ -688,7 +688,7 @@ export default function App() {
                 <section className="border-t border-[#1e2538] pt-4">
                   <h3 className="text-sm font-semibold text-amber-400 uppercase tracking-wider mb-2">2. Hardware Optimization: Why Unsloth?</h3>
                   <p className="text-xs">
-                    Fine-tuning 7-billion parameter models traditionally demands extensive enterprise-grade multi-GPU architectures. Unsloth bypasses this constraint by employing hand-written Triton kernels that bypass PyTorch's autograd system for attention projections. 
+                    Fine-tuning 7-billion parameter models traditionally demands extensive high-VRAM multi-GPU architectures. Unsloth bypasses this constraint by employing hand-written Triton kernels that bypass PyTorch's autograd system for attention projections. 
                   </p>
                   <p className="text-xs mt-2">
                     By combining 4-bit NormalFloat quantization (QLoRA) and Unsloth adapters, we reduced active memory consumption by 60%, allowing full SFT training loops to execute under 6GB VRAM at a 2-4x speed improvement. This brings training capability to mid-range single GPUs like the NVIDIA T4 or L4.
